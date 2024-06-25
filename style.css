@@ -1,0 +1,611 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@font-face {
+    font-family: "Oswald-Light";
+    src: url(Fonts/Oswald-Light.ttf);
+}
+
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url(Fonts/Oswald-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: "Futura-Light";
+    src: url(Fonts/Futura\ Light.otf);
+}
+
+
+@font-face {
+    font-family: "Oswald-SemiBold";
+    src: url(Fonts/Oswald-SemiBold.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+    .Home-Page{
+        width: 100%;
+        height: 100vh;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+       
+    }
+    
+    nav{
+        height: 8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .links-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        display:flex;
+        align-items: center;
+        text-decoration: none;
+        color: #5F43B2;
+        transition: .7s ;
+        
+    }
+
+    nav a:hover{
+        color: #5F43B2;
+        text-shadow:10px 10px 50px #5F43B2;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+    #sidebar-active{
+        display: none;
+    }
+
+    .open-sidebar-button, .close-sidebar-button{
+        padding: 0 20px;
+        display: none;
+    }
+    
+    
+    
+    .MainPage-Content{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-self:space-between;
+        overflow: hidden;
+    }
+    
+    
+    .Left-side-Picture-bg{
+        max-width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        overflow: hidden;
+        z-index: -1;
+    
+    }
+    
+    
+    
+    .right-side-Content{
+        display: flex;
+        justify-content:center;
+        text-align:center;
+        flex-wrap: wrap;
+        padding: 20px;
+        max-width: 807px;
+        min-height: 870px;
+    }
+    
+    .Right-Side-Content-header{
+    
+        width: 100%;
+    
+    }
+    
+    .Right-Side-Content-header h2{
+    
+        font-family: "Oswald-Light";
+        font-weight: 300;
+        font-size:122px;
+        color: #5F43B2;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .Right-Side-Content-header h1{
+    
+        font-family: "Oswald-Bold";
+        font-weight: bold;
+        color: #363636;
+        font-size:122px;
+    }
+    
+    
+    
+    #Right-side-content-text{
+        height: 300px;
+        color: #5F43B2;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+        align-items:center;
+        font-family: "Futura-Light";
+        font-size: 25px;
+    
+    }
+    
+    .Action-Buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+    
+    }
+    
+    
+    .Action-Buttons a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #5F43B2;
+        height: 64px;
+        width: 285px;
+        text-decoration: none;
+        font-family: "Oswald-SemiBold";
+        font-size: 20px;
+        transition-duration: 0.5s;
+        
+    }
+    
+    
+    .Action-Buttons a:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #ffffff;
+        background-color: #5F43B2;
+        color: white;
+        cursor: pointer;
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);;
+        height: 64px;
+        width: 285px;
+        text-decoration: none;
+        font-family: "Oswald-SemiBold";
+        transform: scale(1.15);
+        transition-duration: 0.5s;
+    }
+    
+    .Discount-SideSection{
+        width: 100% ;
+        height: 300px;
+        background: linear-gradient(99deg, rgba(95,67,178,1) 0%, rgba(48,34,89,1) 100%);
+        margin-top: -11px;
+        display: flex;
+        justify-content: space-around;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    
+    .Discount-sidesectioncontent{
+    
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    
+    .Discount-sidesectioncontent h1{
+        color: white;
+        font-family: "Oswald-Bold";
+    
+    }
+    
+    .Discount-sidesectioncontent p{
+        font-family: "Futura-Light";
+        font-size: 19px;
+        color: white;
+    }
+    
+    
+    .Side-Section-images{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        height:100%;
+        width: 1000px;
+    }
+    
+    .Side-Section-images img{
+        max-width: 100%;
+        height: 150px;
+        drop
+    }
+    
+    .About-Us-Section{
+        background-image: url(Images/About-Background.png);
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+        
+    }
+    
+    .About-Us-Section-Content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 20px;
+        padding-top: 10px;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        background-image: linear-gradient(115deg,
+         rgba(0,0,0,1) 0%,
+         rgba(0, 0, 0, 0.935) 38%,
+         rgba(0,0,0,0) 100%)
+    }
+    
+    .About-Us-Section-Content h1{
+        font-family: "Oswald-Bold";
+        font-size: 112px;
+        padding-left: 20px;
+        color: #5F43B2;
+    }
+    
+    .About-Us-Section-Content p{
+        
+        padding-left: 20px;
+        font-family: "Futura-Light";
+        font-size: 1.5em;
+        color: white;
+        
+    }
+    
+    .About-Us-Section-Content a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #5F43B2;
+        height: 64px;
+        width: 285px;
+        text-decoration: none;
+        font-family: "Futura-Light";
+        font-size:30px;
+        color: white;
+        transition-duration: 0.5s;
+    }
+    
+    .About-Us-Section-Content  a:hover{
+        background-color: #5F43B2;
+        color: white;
+        transition-duration: 0.5s;
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);;
+    }
+    
+    #About_Us_Button{
+        padding-top: 20px;
+        padding-left: 20px;
+    
+    }
+    
+    #Pricing-Section{
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    .Pricing-Header{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+       flex-direction: column;
+       padding: 20px;
+    }
+    
+    .Pricing-Header h1{
+        font-family: "Oswald-Bold";
+        font-size:91px;
+        color: #363636 ;
+        
+    }
+    
+    .Pricing-Header h3{
+        font-family: "Futura-Light";
+        color: #5F43B2;
+        padding-left: 7px;
+        font-size: 28px;
+    }
+    
+    
+    
+    .Image-Cards-Wrapper{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 60px;
+        
+    }
+    
+    .Image-Card1{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        width: 400px;
+        height: 600px;
+        border-radius: 20px;
+        padding: 10px;
+        align-items: flex-end;
+        box-shadow: 9px 15px 48px 0px rgba(0,0,0,1);
+    }
+    
+    .Image-Card1 img{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    
+    .Image-Card1:hover{
+        transform:scale(1.05);
+        transform: translateY(-20px);
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);;
+    }
+    
+    .Image-Card1::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        z-index: 2;
+        transition: 0.5s all;
+        opacity: 0;
+    }
+    
+    .Image-Card1:hover:before{
+        opacity: 1;
+    }
+    
+    .Image-Card1 .Card-Content{
+        position: relative;
+        z-index: 3;
+        color: white;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 0.5s all;
+    }
+    
+    .Image-Card1:hover .Card-Content{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+    
+    .Image-Card1 .Card-Content h2{
+        font-family: "Oswald-Bold";
+        color: #5F43B2;
+        font-size: 36px;
+        opacity: 1;
+    }
+    
+    .Card-Content{
+        height: 50%;
+        width: 100%;
+        z-index: 1;
+        padding: 10px;
+    }
+    .Card-title {
+        position: relative;
+        width: fit-content;
+    }
+    
+    .Card-description{
+        font-family: "futura-Light";
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    .Pricing-btn{
+        border: 2px solid #5F43B2;
+        padding: 5px;
+        text-decoration: none;
+        font-family: "Oswald-SemiBold";
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        text-align: right;
+       
+    }
+    
+    .Pricing-btn:hover{
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);
+        transition: .7s ease-in;
+        background-color: #5F43B2;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .Pricing-Button-container{
+        width: 80px;
+        float: right;
+    }
+    
+    
+    .Contact-Form-Section{
+        height: 60vh;
+        width: 100%;
+       display: flex;
+       justify-content:center;
+       transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    
+    .Contact-Form-Container{
+        width: 100%;
+        height: 70vh;
+        border: 1px solid red;
+        background: linear-gradient(99deg, rgba(95,67,178,1) 0%, rgba(48,34,89,1) 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .Contact-Form-Container h1{
+        font-family: "Oswald-Bold";
+        color: white;
+        font-size: 50px;
+        padding: 10px;
+    }
+    .Contact-Form{
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items:center;
+        background-color: #ffffff;
+        width: 40%;
+        height: 60vh;
+        border-radius:7px;
+        box-shadow:6px 10px 45px 14px rgba(0, 0, 0, 0.39);;
+        padding: 20px;
+    }
+    
+    .Contact-Form input{
+        width: 180px;
+        color: black;
+        font-family: "Futura-Light";
+        display: flex;
+        flex-direction: column;
+        place-content: space-between;
+        padding: 5px;
+ 
+    }
+    
+    .Contact-Form textarea{
+        width: 60%;
+        height:25vh;
+        border: 2px solid #000000;
+    }
+    .Input-Container{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    
+    .Contact-Form button{
+        font-family: "Oswald-SemiBold";
+        width: 100px;
+        height: fit-content;
+        border-radius: 15px;
+        font-size: 20px;
+        color: #5F43B2;
+        border: 2px solid #5F43B2;
+        background-color: transparent;
+    }
+
+    .Contact-Form button:hover{
+        font-family: "Oswald-SemiBold";
+        width: 100px;
+        height: fit-content;
+        border-radius: 15px;
+        font-size: 20px;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        background-color: #5F43B2;
+        transition: .7s ease-in;
+        cursor: pointer;
+    }
+    .Contact-Form input{
+        border: 2px solid #000000;
+        margin: 7px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+    }
+    .input-Self{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
