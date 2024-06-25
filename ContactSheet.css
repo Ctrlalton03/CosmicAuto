@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+@font-face {
+    font-family: "Oswald-Light";
+    src: url(Fonts/Oswald-Light.ttf);
+}
+
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url(Fonts/Oswald-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: "Futura-Light";
+    src: url(Fonts/Futura\ Light.otf);
+}
+
+
+@font-face {
+    font-family: "Oswald-SemiBold";
+    src: url(Fonts/Oswald-SemiBold.ttf);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  padding: 10px;
+  background-color: white;
+  }
+
+    .links-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        display:flex;
+        align-items: center;
+        text-decoration: none;
+        color: #5F43B2;
+        transition: .7s ;
+        
+    }
+
+    nav a:hover{
+        color: #5F43B2;
+        text-shadow:10px 10px 50px #5F43B2;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+#sidebar-active{
+        display: none;
+    }
