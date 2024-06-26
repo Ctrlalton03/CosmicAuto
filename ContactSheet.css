@@ -34,43 +34,109 @@ html{
 }
 
 nav{
-  height: 8vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items:center;
-  padding: 10px;
   background-color: white;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+  border:1px red solid;
   }
 
-    .links-container{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid red;
+}
 
+nav li{
+    height: 60px;
+    border: 1px solid red;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #5F43B2;
+}
+
+nav a:hover{
+    transform: scale(1.1);
+    transition: .5s ease-out;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    transform: none;
+    transition: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}   
+
+.sidebar li{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.sidebar a{
+    width: 100%;
+    color: #5F43B2;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Oswald-Light";
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    nav li{
+        height: 100px;
+        border: none;
+    }
+
+
+
+
+
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
     }
 
     nav a{
         height: 100%;
-        padding: 0 20px;
-        display:flex;
-        align-items: center;
+        padding: 0 30px;
+        display: flex;
         text-decoration: none;
+        align-items: center;
         color: #5F43B2;
-        transition: .7s ;
-        
     }
-
-    nav a:hover{
-        color: #5F43B2;
-        text-shadow:10px 10px 50px #5F43B2;
-        cursor: pointer;
-        transform: scale(1.1);
+    nav li{
+        height: 100px;
+        border: none;
     }
-
-
-#sidebar-active{
-        display: none;
-    }
+}

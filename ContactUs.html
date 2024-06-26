@@ -1,50 +1,65 @@
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Stylesheet" href="ContactSheet.css" />
-    <title>Cosmic-Auto</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="Stylesheet" href="ContactSheet.css" />
+  <title>Cosmic-Auto</title>
+</head>
+<body>
   <section class="Main-Container">
-<nav>
-            <div class="logo">
-              <h1>Logo</h1>
-            </div>
-            <input type="checkbox" id="sidebar-active" />
-            <label for="sidebar-active" class="open-sidebar-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="32"
-                viewBox="0 -960 960 960"
-                width="32"
-              >
-                <path
-                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-                />
-              </svg>
-            </label>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="ComparePackages.html">Packages</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <ul>
+        <li><a>Logo</a></li>
+        <li class="hideOnMobile"><a href="Index.html">Home</a></li>
+        <li class="hideOnMobile">
+          <a href="ComparePackages.html">Packages</a>
+        </li>
+        <li class="hideOnMobile"><a href="ContactUs.html">Contact Us</a></li>
+        <li class="hideOnMobile"><a href="#">About Us</a></li>
+        <li onclick="showSidebar()">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
-            <div class="links-container">
-              <label for="sidebar-active" class="close-sidebar-button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="32"
-                  viewBox="0 -960 960 960"
-                  width="32"
-                >
-                  <path
-                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                  />
-                </svg>
-              </label>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
 
-              <a class="home-link" href="Index.html">Home</a>
-              <a href="ComparePackages.html">Packages</a>
-              <a href="ContactUs.html">Contact Us</a>
-              <a href="#">About Us</a>
-            </div>
-          </nav>
-
-  </section>  
-  </body>
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </section>
+</body>
