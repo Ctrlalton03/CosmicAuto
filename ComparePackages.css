@@ -140,6 +140,8 @@ nav a:hover{
     justify-content: space-evenly;
     align-items: center;
     padding-top: 60px;
+    border: 2px solid red;
+    margin-bottom: 50px;
     
 }
 
@@ -155,6 +157,7 @@ nav a:hover{
     height: 600px;
     border-radius: 20px;
     padding: 10px;
+    margin-bottom: 50px;
     align-items: flex-end;
     box-shadow: 9px 15px 48px 0px rgba(0,0,0,1);
 }

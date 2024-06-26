@@ -35,8 +35,6 @@ html{
 
 nav{
   background-color: white;
-  box-shadow: 3px 3px 5px rgb(0, 0, 0);
-  border:1px red solid;
   }
 
 nav ul{
@@ -45,12 +43,11 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid red;
 }
 
 nav li{
     height: 60px;
-    border: 1px solid red;
+
 }
 
 nav a{
@@ -133,9 +130,61 @@ nav li:first-child{
     }
 
 
+    .ContactFormContainer{
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    #contactformheader{
+        font-family: "Oswald-SemiBold";
+        font-size: 40px;
+        color: #5F43B2;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;;
+
+    }
+
+    #contactformdetails{
+        font-family: "futura-Light";
+        font-size: 20px;
+        color: #5F43B2;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
 
 
 
+    .form-group{
+        height: 10vh;
+        display: flex;
+        flex-direction:column ;
+    }    
+
+
+    .form-group label{
+        padding-bottom: 5px;
+        font-family: "Oswald-Light";
+    }
+
+
+    .form-group input{
+        height: 40px;
+        width: 100%;
+        border: 1px solid #5F43B2;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: "Oswald-Light";
+    }
 }
 
 @media(max-width: 400px){
