@@ -162,6 +162,16 @@ nav li:first-child{
 
     }
 
+    .Contact-Form{
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items:left;
+        
+        width: 100%;
+        padding-bottom:10px ;
+    }
+
 
 
     .form-group{
@@ -184,7 +194,21 @@ nav li:first-child{
         border-radius: 5px;
         padding: 10px;
         font-family: "Oswald-Light";
+        padding: 10px;
     }
+
+
+    #message{
+        height: 200px;
+        width: 100%;
+        border: 1px solid #5F43B2;
+        border-radius: 5px;
+        font-family: "Oswald-Light";
+    
+    }
+
+
+
 }
 
 @media(max-width: 400px){
