@@ -151,7 +151,7 @@ nav li:first-child{
 
     #contactformdetails{
         font-family: "futura-Light";
-        font-size: 20px;
+        font-size: 18px;
         color: #5F43B2;
         margin-top: 10px;
         margin-bottom: 20px;
@@ -178,6 +178,7 @@ nav li:first-child{
         height: 10vh;
         display: flex;
         flex-direction:column ;
+        padding: 10px;
     }    
 
 
@@ -205,6 +206,12 @@ nav li:first-child{
         border-radius: 5px;
         font-family: "Oswald-Light";
     
+    }
+
+    #form-button{
+        background-color: transparent;
+        border: 2px solid #5F43B2;
+        border-radius: 5px;
     }
 
 
