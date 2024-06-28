@@ -804,6 +804,7 @@ html{
         flex-direction: column;
         align-items: center;
         height:50%;
+        width: 100%;
         padding: 20px;
         
     }
@@ -817,10 +818,14 @@ html{
 
     .Discount-sidesectioncontent p{
         font-family: "Futura-Light";
-        font-size: 16px;
+        font-size: 20px;
         color: white;
         text-align: center;
+        padding: 20px;
     }
+
+    .Discount-sidesectioncontent br{
+        display: none;}
 
     .Side-Section-images{
         display: flex;
@@ -852,10 +857,55 @@ html{
 
 
 
-
+/* About us*/
     .About-Us-Section{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .About-Us-Section-Content{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .About-Us-Section-Content br{
         display: none;
     }
+
+    #About_Us_Button{
+        
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     #Pricing-Section{
         display: none;
     }
@@ -902,6 +952,23 @@ html{
         padding-top: 20px;
     }
 
+
+
+
+
+
+    /* About us*/
+    .About-Us-Section-Content a{
+        font-size: 20px;
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+
+
+
+
     @media(max-width: 400px){
         .Right-Side-Content-header h2{
             font-size: 60px;
@@ -942,7 +1009,23 @@ html{
             height: 150px;
             
         }
-    
+        
+
+        .About-Us-Section-Content h1{
+            font-size: 60px;
+        }
+
+        .About-Us-Section-Content p{
+            font-size: 20px;
+        }
+
+        .About-Us-Section-Content a{
+            font-size: 25px;
+            width: auto;
+            height: auto;
+            padding: 20px;
+        }
+
     
     }
 }
