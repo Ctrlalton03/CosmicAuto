@@ -883,6 +883,9 @@ html{
         
     }
 
+
+    /* Pricing Section */
+
     #Pricing-Section{
         display: flex;
         width: 100%;
@@ -891,18 +894,84 @@ html{
 
     .Pricing-Header{
         display: flex;
-        border: 1px red solid;
         width: 100%;
         
     }
 
     .Pricing-Header h1{
         font-family: "Oswald-Bold";
-        font-size: 60px;
+        font-size: 40px;
         color: #363636 ;
         
     }
 
+
+    .Pricing-Header h3{
+        font-family: "Futura-Light";
+        color: #5F43B2;
+        font-size: 20px;
+    }
+
+    .Image-Cards-Wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        
+    }
+
+    .Image-Card1{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex: 1 1 100px;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px;
+        box-shadow: 9px 15px 48px 0px rgba(0,0,0,1);
+    }
+
+    .Image-Card1:hover{
+        transform:scale(1);
+        transform: translateY(0px);
+        box-shadow:none;
+    }
+
+    .Card-Content{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        place-content: center;
+        padding: 10px;
+        justify-content: space-evenly;
+        text-align: left;
+        align-items: center;
+        border: 1px solid red;
+    }
+
+    .Pricing-btn{
+        display: flex;
+        
+    }
+
+    .Card-Content h2{
+        font-family: "Oswald-Bold";
+        color: #5F43B2;
+        font-size: 1px;
+    }
+
+
+    .Card-description{
+        display: none;
+    }
 
 
 
@@ -925,7 +994,29 @@ html{
 
 
     .Contact-Form-Section{
-        display: none;
+        display: flex;
+        width: 100%;
+    }
+
+    .Contact-Form-Container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 1px solid red;
+        background-color: #ffffff;
+    }
+
+
+
+    .Contact-Form{
+    
+    }
+
+    .Input-Container{
+        border: 1px solid red;
+        padding: 10px;
     }
 }
 

@@ -170,15 +170,27 @@
           action="https://formsubmit.co/cosmicautodetailfl@gmail.com"
           method="POST"
         >
-        <div class="input-Self">
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input type="Email" name="Email" placeholder="Email" required />
-        </div>
-          <div class="Input-Container">
-            <textarea name="Message" placeholder="Message" required></textarea>
-          </div>
-          <button type="submit">Send</button>
-        </form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+           <input type="text" id="name" name="name" placeholder="Full Name" required>
+         </div>
+         <div class="form-group">
+           <label for="email">Email</label>
+           <input type="text" id="email" name="email" placeholder="Email" required>
+         </div>
+         <div class="form-group">
+             <label for="Phone">Phone</label>
+             <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+         </div>
+         <div class="form-group">
+           <label for="message">Send Us a Message!</label>
+           <textarea id="message" name="message" placeholder="Send Us A Message" required></textarea>
+         </div>
+         <div class="Button">
+           <button type="submit" id="form-button">Send
+           </button>
+         </div>
+         </form>
       </div>
       <script>
         function showSidebar() {
