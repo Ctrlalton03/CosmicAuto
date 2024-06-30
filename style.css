@@ -964,8 +964,7 @@ html{
 
     .Card-Content h2{
         font-family: "Oswald-Bold";
-        color: #5F43B2;
-        font-size: 1px;
+        
     }
 
 
@@ -1072,7 +1071,69 @@ html{
     }
 
 
-    /* */
+    /* Pricing Section*/
+
+    #Pricing-Section{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .Pricing-Header{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid red;
+        text-align: center;
+    }
+
+    .Image-Cards-Wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        height: 70vh;
+        
+        
+    }
+
+    .Image-Card1{
+
+        display: flex;
+        width: 200px;
+        height: 100px;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        
+    }
+
+    .Pricing-Header h1{
+        font-size: 60px;
+    }
+
+
+    .Card-Content{
+        height: 50%;
+        width: 100%;
+        border: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .Card-Content h2{
+        font-size: 20px;
+        color: #ffffff;
+    }
+
 
 
 
@@ -1134,6 +1195,20 @@ html{
             padding: 20px;
         }
 
+        .Image-Cards-Wrapper{
+            border: 2px solid red;
+            display: flex;
+            flex: 1 1 100px;
+            transition-duration: 0.5s;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
     
+        .Pricing-Header h1{
+            font-size: 60px;
+        }
     }
 }
