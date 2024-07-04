@@ -519,7 +519,6 @@ html{
     .Contact-Form-Container{
         width: 100%;
         height: 70vh;
-        border: 1px solid red;
         background: linear-gradient(99deg, rgba(95,67,178,1) 0%, rgba(48,34,89,1) 100%);
         display: flex;
         flex-direction: column;
@@ -1003,7 +1002,6 @@ html{
         justify-content: center;
         align-items: center;
         width: 100%;
-        border: 1px solid red;
         background-color: #ffffff;
     }
 
@@ -1014,7 +1012,7 @@ html{
     }
 
     .Input-Container{
-        border: 1px solid red;
+        
         padding: 10px;
     }
 }
@@ -1227,15 +1225,13 @@ html{
 
         .Contact-Form-Container{
             width: 100%;
-        
-            border: 2px solid red;
         }
         
 
         .Contact-Form{
             width: 100%;
             height: 100vh;
-            border: 2px solid red;
+            
         }
 
         #message{
