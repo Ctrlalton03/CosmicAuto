@@ -608,8 +608,385 @@ html{
         width: 100%;
         justify-content: center;
     }
+
+
+    @media(max-width: 1500px){
+
+
+        /*Main Page*/
+        .Home-Page{
+            width: 100%;
+            height: 100vh;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+           overflow: hidden;
+        }
+
+        nav{
+            background-color: white;
+            }
+          
+          nav ul{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+          }
+          
+          nav li{
+              height: 60px;
+          
+          }
+          
+          nav a{
+              height: 100%;
+              padding: 0 30px;
+              display: flex;
+              text-decoration: none;
+              align-items: center;
+              color: #5F43B2;
+          }
+          
+          nav a:hover{
+              transform: scale(1.1);
+              transition: .5s ease-out;
+          }
+          
+          nav li:first-child{
+              margin-right: auto;
+          }
+          .sidebar{
+              transform: none;
+              transition: none;
+              position: fixed;
+              top: 0;
+              right: 0;
+              
+              height: 100vh;
+              width: 250px;
+              z-index: 999;
+              background-color: white;
+              box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              
+          }   
+          
+          .sidebar li{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 20px 0;
+          }
+          
+          .sidebar a{
+              width: 100%;
+              color: #5F43B2;
+              text-decoration: none;
+              font-size: 20px;
+              font-family: "Oswald-Light";
+          }
+
+            .menu-button{
+                display: none;
+            }
+
+
+
+
+
+
+
+         /*contact form*/
+         .Contact-Form-Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 50px;
+        }
+
+        .Contact-Form{
+            width: 60%;
+            padding: 10px;
+            
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 5px;
+            
+        }
+
+        .form-group input{
+            width: 100%;
+            height: 50%;
+        }
+
+        #message{
+            width: 100%;
+            height: 150px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+            font-family: "futura-Light";
+            padding: 5px;
+        
+        }
+    }
     
 
+
+
+    @media(max-width: 1100px){
+
+        .Home-Page{
+            width: 100%;
+            height: 100vh;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+           overflow: hidden;
+        }
+
+        nav{
+            background-color: white;
+            }
+          
+          nav ul{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+          }
+          
+          nav li{
+              height: 60px;
+          
+          }
+          
+          nav a{
+              height: 100%;
+              padding: 0 30px;
+              display: flex;
+              text-decoration: none;
+              align-items: center;
+              color: #5F43B2;
+          }
+          
+          nav a:hover{
+              transform: scale(1.1);
+              transition: .5s ease-out;
+          }
+          
+          nav li:first-child{
+              margin-right: auto;
+          }
+          .sidebar{
+              transform: none;
+              transition: none;
+              position: fixed;
+              top: 0;
+              right: 0;
+              
+              height: 100vh;
+              width: 250px;
+              z-index: 999;
+              background-color: white;
+              box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              
+          }   
+          
+          .sidebar li{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 20px 0;
+          }
+          
+          .sidebar a{
+              width: 100%;
+              color: #5F43B2;
+              text-decoration: none;
+              font-size: 20px;
+              font-family: "Oswald-Light";
+          }
+          
+          .menu-button{
+            display: none;
+          }
+
+
+          .MainPage-Content{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-self:space-between;
+            overflow: hidden;
+          }
+
+
+          .right-side-Content{
+            display: flex;
+            justify-content:center;
+            text-align:center;
+            flex-wrap: wrap;
+            padding: 20px;
+            
+            width: 50%;
+          }
+
+
+          .Right-Side-Content-header h2{
+            
+            font-size: 80px ;
+          }
+
+          .Right-Side-Content-header h1{
+            font-size: 80px;
+          }
+
+
+          #Right-side-content-text{
+            
+            font-size: 20px;
+        
+          }
+
+            .Action-Buttons{
+                width: 100%;
+                display: flex;
+               
+            }
+
+            .Action-Buttons a{
+                font-size: 20px;
+                border: 3px solid #5F43B2;
+                border-radius:5px ;
+                width: auto;
+            }
+
+        
+
+        /* Discount section*/
+        .Discount-SideSection{
+            width: 100% ;
+            overflow: hidden;
+            height: 60vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .Discount-sidesectioncontent{
+            display: flex;
+            flex-direction:column ;
+            text-align: left;
+            
+            overflow: hidden;
+            height:60%;
+            width: 80%;
+            padding: 20px;
+            
+        }
+
+        .Discount-sidesectioncontent h1{
+            color: white;
+            font-family: "Oswald-Bold";
+            font-size: 40px;
+            text-align: left;
+        }
+
+        .Discount-sidesectioncontent p{
+            font-family: "Futura-Light";
+            font-size: 20px;
+            color: white;
+            text-align: left;
+        }
+
+        .Discount-sidesectioncontent br{
+            display: none;}
+
+        .Side-Section-images{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            height:40%;
+            width: 100%;
+            padding: 20px;
+            flex-wrap: wrap;
+           
+        }
+
+
+
+
+        /*contact form*/
+        .Contact-Form-Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 50px;
+        }
+
+        .Contact-Form{
+            width: 60%;
+            padding: 10px;
+            
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 5px;
+            
+        }
+
+        .form-group input{
+            width: 100%;
+            height: 50%;
+        }
+
+        #message{
+            width: 100%;
+            height: 150px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+            font-family: "futura-Light";
+            padding: 5px;
+        
+        }
+
+
+
+
+
+
+
+    }
     
     @media(max-width: 800px){
 
@@ -838,24 +1215,6 @@ html{
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* About us*/
     .About-Us-Section{
         display: flex;
@@ -877,10 +1236,7 @@ html{
         display: none;
     }
 
-    #About_Us_Button{
-        
-        
-    }
+
 
 
     /* Pricing Section */
@@ -1003,18 +1359,45 @@ html{
         align-items: center;
         width: 100%;
         background-color: #ffffff;
+        padding: 50px;
     }
+
+
 
 
 
     .Contact-Form{
+        width: 100%;
+        padding: 50px;
+        
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .form-group input{
+        width: 100%;
+        height: 50%;
+    }
+
+
+    #message{
+        width: 100%;
+        height: 150px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        font-family: "futura-Light";
+        padding: 5px;
     
     }
 
-    .Input-Container{
-        
-        padding: 10px;
-    }
+
+
+
 }
 
 @media(max-width: 500px){
@@ -1146,7 +1529,7 @@ html{
  /* contact form*/
     .Contact-Form-Container{
     width: 100%;
-    border: 1px solid red;
+    
     height: 100vh;
     align-items: center;
     display: flex;
@@ -1184,6 +1567,8 @@ html{
     height: 100px;
     margin-left: 5px;
     margin-bottom: 10px;
+    font-family: "futura-Light";
+    padding: 5px;
     }
 }
 
@@ -1278,6 +1663,7 @@ html{
         #message{
             width: 100%;
             height: 100px;
+            font-family: "futura-Light";
         }
 
     }
