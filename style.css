@@ -62,53 +62,90 @@ html{
        
     }
     
-    nav{
-        height: 8vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items:center;
-        padding: 10px;
-        background-color: white;
-    }
-
-    .links-container{
-        height: 100%;
+    .Home-Page{
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+        height: 100vh;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+       overflow: hidden;
     }
 
-    nav a{
-        height: 100%;
-        padding: 0 20px;
-        display:flex;
-        align-items: center;
-        text-decoration: none;
-        color: #5F43B2;
-        transition: .7s ;
-        
-    }
-
-    nav a:hover{
-        color: #5F43B2;
-        text-shadow:10px 10px 50px #5F43B2;
-        cursor: pointer;
-        transform: scale(1.1);
-    }
-
-
-    #sidebar-active{
+    nav{
+        background-color: white;
+        }
+      
+      nav ul{
+          width: 100%;
+          list-style: none;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+      }
+      
+      nav li{
+          height: 60px;
+      
+      }
+      
+      nav a{
+          height: 100%;
+          padding: 0 30px;
+          display: flex;
+          text-decoration: none;
+          align-items: center;
+          color: #5F43B2;
+      }
+      
+      nav a:hover{
+          transform: scale(1.1);
+          transition: .5s ease-out;
+      }
+      
+      nav li:first-child{
+          margin-right: auto;
+      }
+      .sidebar{
+          transform: none;
+          transition: none;
+          position: fixed;
+          top: 0;
+          right: 0;
+          
+          height: 100vh;
+          width: 250px;
+          z-index: 999;
+          background-color: white;
+          box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          
+      }   
+      
+      .sidebar li{
+          width: 100%;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 20px 0;
+      }
+      
+      .sidebar a{
+          width: 100%;
+          color: #5F43B2;
+          text-decoration: none;
+          font-size: 20px;
+          font-family: "Oswald-Light";
+      }
+      
+      .menu-button{
         display: none;
-    }
-
-    .open-sidebar-button, .close-sidebar-button{
-        padding: 0 20px;
-        display: none;
-    }
-    
+      }
     
     
     .MainPage-Content{
@@ -139,8 +176,8 @@ html{
         text-align:center;
         flex-wrap: wrap;
         padding: 20px;
-        max-width: 807px;
-        min-height: 870px;
+        width: 40%;
+      
     }
     
     .Right-Side-Content-header{
@@ -525,6 +562,7 @@ html{
         align-items: center;
         justify-content: center;
         padding: 20px;
+        
     }
     .Contact-Form-Container h1{
         font-family: "Oswald-Bold";
@@ -543,6 +581,7 @@ html{
         border-radius:7px;
         box-shadow:6px 10px 45px 14px rgba(0, 0, 0, 0.39);;
         padding: 20px;
+        
     }
     
     .Contact-Form input{
@@ -571,6 +610,11 @@ html{
         padding: 10px;
     }
     
+    .form-group{
+        
+        width: 100%;
+        
+    }
     
     .Contact-Form button{
         font-family: "Oswald-SemiBold";
@@ -598,15 +642,19 @@ html{
     .Contact-Form input{
         border: 2px solid #000000;
         margin: 7px;
-        width: 200px;
+        width: 100%;
         display: flex;
         flex-direction: row;
     }
-    .input-Self{
-        display: flex;
-        flex-direction: row;
+    
+    #message{
         width: 100%;
-        justify-content: center;
+        height: 150px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        font-family: "futura-Light";
+        padding: 5px;
+    
     }
 
 
@@ -699,6 +747,74 @@ html{
                 display: none;
             }
 
+            .MainPage-Content{
+                
+            }
+
+            .right-side-Content{
+                display: flex;
+                justify-content:center;
+                text-align:center;
+                flex-wrap: wrap;
+                
+                height: 100vh;
+                width: 50%;
+                
+            }
+            
+            .Right-Side-Content-header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 25vh;
+                
+            }
+
+            .Right-Side-Content-header h2{
+                padding: 0;
+                font-size: 40px ;
+            }
+
+            .Right-Side-Content-header h1{
+                font-size: 60px;
+            }   
+
+
+            #Right-side-content-text{
+                height: 30%;
+                font-size: 16px;
+               
+            }
+
+            .Action-Buttons{
+                width: 100%;
+                height: 20vh;
+               
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /*pricing-packages*/
+
+            #Pricing-Section{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+            
+            }
+
+
+            /*discount section*/
+            .Discount-sidesectioncontent br{
+                display: none;}
+
+           
+
 
 
 
@@ -706,20 +822,30 @@ html{
 
 
          /*contact form*/
+
+         .Contact-Form-Section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: ;
+         }
          .Contact-Form-Container{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
-            background-color: #ffffff;
-            padding: 50px;
+            height: 100%;
+           
         }
 
         .Contact-Form{
             width: 60%;
-            padding: 10px;
-            
+            height: fit-content;
+            padding: 20px;
+          
         }
 
         .form-group{
@@ -750,6 +876,8 @@ html{
 
 
     @media(max-width: 1100px){
+
+
 
         .Home-Page{
             width: 100%;
@@ -839,10 +967,11 @@ html{
 
           .MainPage-Content{
             width: 100%;
-            height: 100vh;
+            height: 100%;
             display: flex;
             justify-self:space-between;
             overflow: hidden;
+           
           }
 
 
@@ -851,31 +980,44 @@ html{
             justify-content:center;
             text-align:center;
             flex-wrap: wrap;
+          
             padding: 20px;
-            
             width: 50%;
+            
           }
 
+            .Right-Side-Content-header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 30vh;
+                padding: 80px;
+                
+            }
 
           .Right-Side-Content-header h2{
             
-            font-size: 80px ;
+            font-size: 60px ;
           }
 
           .Right-Side-Content-header h1{
-            font-size: 80px;
+            font-size: 60px;
           }
 
 
           #Right-side-content-text{
             
-            font-size: 20px;
+            height: 30%;
+            font-size: 12px
         
           }
 
             .Action-Buttons{
                 width: 100%;
                 display: flex;
+                flex-direction: column;
                
             }
 
