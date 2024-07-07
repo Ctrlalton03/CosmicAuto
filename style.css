@@ -1283,7 +1283,7 @@ html{
         flex-wrap: wrap;
         font-family: "Futura-Light";
         font-size: 1.2em;
-        border: 1px solid red;
+        
     }
 
 
@@ -1544,6 +1544,15 @@ html{
 }
 
 @media(max-width: 600px){
+
+    .Right-Side-Content-header{
+        height: 30%;
+        
+    }
+
+
+
+
     .Right-Side-Content-header h2{
         font-size: 60px;
     }
@@ -1733,8 +1742,9 @@ html{
         #Right-side-content-text{
             height: 20%;
             width: 80%;
-            font-size: 16px;
+            font-size: 14px;
             padding-bottom: 30px;
+            
             
         }
         .Right-Side-Content-header h2{
