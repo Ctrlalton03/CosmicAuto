@@ -1263,7 +1263,7 @@ html{
     .Right-Side-Content-header h2{
         margin: 0px;
         font-family: "Oswald-Light";
-        font-size: 80px;
+        font-size: 60px;
         color: #5F43B2;
    
     }
@@ -1283,7 +1283,7 @@ html{
         flex-wrap: wrap;
         font-family: "Futura-Light";
         font-size: 1.2em;
-        padding: 0px;
+        border: 1px solid red;
     }
 
 
@@ -1543,7 +1543,7 @@ html{
 
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
     .Right-Side-Content-header h2{
         font-size: 60px;
     }
