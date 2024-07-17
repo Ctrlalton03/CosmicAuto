@@ -468,7 +468,7 @@ nav a:hover{
     padding: 2rem;
     flex-grow: 1;
     flex-basis: 0;
-    max-width: 275px;
+    max-width: 80%;
     border-radius: 18px;
     color: #5F43B2;
     box-shadow: 10px 10px 47px 0px rgba(0,0,0,0.75);
