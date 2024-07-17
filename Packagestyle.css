@@ -52,7 +52,320 @@ body {
     src: url(Fonts/Oswald-SemiBold.ttf);
 }
 
+    /* mobile nav */
+    .Sedan-PackagingPage{
+        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
 
+    nav{
+        background-color: white;
+        }
+      
+      nav ul{
+          width: 100%;
+          list-style: none;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+      }
+      
+      nav li{
+          height: 60px;
+      
+      }
+      
+      nav a{
+          height: 100%;
+          padding: 0 30px;
+          display: flex;
+          text-decoration: none;
+          align-items: center;
+          color: #5F43B2;
+      }
+      
+      nav a:hover{
+          transform: scale(1.1);
+          transition: .5s ease-out;
+      }
+      
+      nav li:first-child{
+          margin-right: auto;
+      }
+      .sidebar{
+          transform: none;
+          transition: none;
+          position: fixed;
+          top: 0;
+          right: 0;
+          
+          height: 100vh;
+          width: 250px;
+          z-index: 999;
+          background-color: white;
+          box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          
+      }   
+      
+      .sidebar li{
+          width: 100%;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 20px 0;
+      }
+      
+      .sidebar a{
+          width: 100%;
+          color: #5F43B2;
+          text-decoration: none;
+          font-size: 20px;
+          font-family: "Oswald-Light";
+      }
+      
+      
+      .menu-button{
+        display: none;
+      }
+      
+    .hideOnMobile{
+        display: none;
+    }
+    
+    .menu-button{
+      display:block ;
+    }
+    
+    
+    .sidebar{
+      display: hidden;
+    }
+    
+    
+    nav li{
+        height: 100px;
+        border: none;
+    }
+
+    
+
+
+
+
+    #Packing-Picture-Header{
+        background-image: url(Images/SedanBackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 30%;
+    }
+
+    #Sedan-header{
+        color: white;
+        font-family: "Oswald-Bold";
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        padding-top: 60px;
+        text-shadow:10px 10px 20px #000000af;
+    }
+
+    #Package-container{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .Packages-comparison{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        width:80%;
+        
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(0, 4, 255);
+        border-radius:5px ;
+        
+    }
+
+    .price-column.popular{
+        background-color: #5F43B2;
+    }
+    
+    .swiper{
+        width: 100%;
+        height: 100%;
+    }
+    
+   .swiper-container{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+   }
+
+   .slider-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    height: 80vh;
+   }
+
+
+    .swiperslide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        border-radius:15px ;
+        padding: 10px;
+    }
+
+    .swiperslide2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        border-radius:15px ;
+        padding: 10px;
+    }
+
+
+
+
+
+    .price-header{
+        font-family: "Oswald-SemiBold";
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .price{
+        font-size: 3.5rem;
+        display: flex;
+        
+    }
+    
+    .dollar-sign{
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        margin-right: .25rem;
+        font-family: "Aileron-Light";
+    }
+    
+    .Usd{
+        font-size: .75rem;
+        align-self: flex-end;
+        margin-bottom: 1rem;
+        font-family: "Aileron-Light";
+    }
+    
+    .divider{
+        height: 1px;
+        width: 100%;
+        background-color: black;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature{
+        display: flex;
+        align-items: center;
+        margin: .4rem;
+        font-size: .85rem;
+        font-family: "Aileron-Light";
+    }
+    
+    .feature img{
+        height: 1.1em;
+        width: 1.1em;
+        margin-right: .5rem;
+    }
+    
+    .feature.inactive{
+        color: gray;
+        text-decoration: line-through;
+    }
+    
+    .most-popular{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: "Oswald-Bold";
+    }
+
+    .price-column-popular .feature{
+        font-size: .85rem;
+        font-family: "Aileron-Light";
+    }
+    
+    .Packages-comparison:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: .2s ease-out;
+    }
+    
+    .price-column{
+        background-color: white;
+        padding: 2rem;
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 275px;
+        border-radius: 18px;
+        color: #5F43B2;
+        box-shadow: 10px 10px 47px 0px rgba(0,0,0,0.75);
+    }
+
+    .price-column-popular{
+        background-color: #5F43B2;
+        padding: 2rem;
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 80%;
+        border-radius: 18px;
+        color: white;
+        box-shadow: 10px 10px 47px 0px rgba(0,0,0,0.75);
+    }
+
+    .most-popular{
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+
+
+    
+
+
+
+
+@media screen and (min-width: 1024px){
 nav{
     height: 8vh;
     display: flex;
@@ -241,4 +554,5 @@ nav a:hover{
     cursor: pointer;
     transform: scale(1.2);
     transition: .2s ease-out;
+}
 }

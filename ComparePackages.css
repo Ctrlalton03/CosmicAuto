@@ -55,208 +55,7 @@ body {
     font-family: "Oswald-SemiBold";
     src: url(Fonts/Oswald-SemiBold.ttf);
 }
-
-#ComparePackages-Main{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-nav{
-    height: 8vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 25px;
-    width: 100%;
-}
-
-.links-container{
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-}
-
-nav a{
-    height: 100%;
-    padding: 0 20px;
-    display:flex;
-    align-items: center;
-    text-decoration: none;
-    color: #5F43B2;;
-    transition: .7s ;
-    text-shadow:5px 5px 20px #000000af;
-    
-}
-
-nav a:hover{
-    color: #5F43B2;
-    text-shadow:10px 10px 50px #5F43B2;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-
-#sidebar-active{
-    display: none;
-}
-
-.open-sidebar-button, .close-sidebar-button{
-    padding: 0 20px;
-    display: none;
-}
-
-.Pricing-Header{
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.Pricing-Header h1{
-    font-family: "Oswald-Bold";
-    font-size: 3rem;
-    color: #5F43B2;
-    text-align: center;
-    text-shadow: 5px 5px 20px #00000046;
-}
-
-.Pricing-Header h3{
-    font-family: "Oswald-Light";
-    font-size: 1.5rem;
-    color: #5F43B2;
-    text-align: center;
-    text-shadow: 5px 5px 20px #00000046;
-}
-.Image-Cards-Wrapper{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 60px;
-    border: 2px solid red;
-    margin-bottom: 50px;
-    
-}
-
-.Image-Card1{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    transition-duration: 0.5s;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    width: 400px;
-    height: 600px;
-    border-radius: 20px;
-    padding: 10px;
-    margin-bottom: 50px;
-    align-items: flex-end;
-    box-shadow: 9px 15px 48px 0px rgba(0,0,0,1);
-}
-.Image-Card1 img{
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.Image-Card1:hover{
-    transform:scale(1.05);
-    transform: translateY(-20px);
-    box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);;
-}
-.Image-Card1::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-    z-index: 2;
-    transition: 0.5s all;
-    opacity: 0;
-}
-
-.Image-Card1:hover:before{
-    opacity: 1;
-}
-
-.Image-Card1 .Card-Content{
-    position: relative;
-    z-index: 3;
-    color: white;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.5s all;
-}
-
-.Image-Card1:hover .Card-Content{
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-.Image-Card1 .Card-Content h2{
-    font-family: "Oswald-Bold";
-    color: #5F43B2;
-    font-size: 36px;
-    opacity: 1;
-}
-
-.Card-Content{
-    height: 50%;
-    width: 100%;
-    z-index: 1;
-    padding: 10px;
-}
-.Card-title {
-    position: relative;
-    width: fit-content;
-}
-
-.Card-description{
-    font-family: "futura-Light";
-    font-size: 15px;
-    width: 100%;
-}
-
-.Pricing-btn{
-    border: 2px solid #5F43B2;
-    padding: 5px;
-    text-decoration: none;
-    font-family: "Oswald-SemiBold";
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    text-align: right;
-   
-}
-
-.Pricing-btn:hover{
-    box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);
-    transition: .7s ease-in;
-    background-color: #5F43B2;
-    color: white;
-    cursor: pointer;
-}
-
-.Pricing-Button-container{
-    width: 80px;
-    float: right;
-}
-
-/*laptop style*/
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width:1024px) {
     nav{
         background-color: white;
         }
@@ -327,34 +126,188 @@ nav a:hover{
           font-size: 20px;
           font-family: "Oswald-Light";
       }
-      
-      .menu-button{
+
+    .menu-button{
         display: none;
       }
-} 
 
 
 
 
 
-
-
-
+    
+    .Pricing-Header{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .Pricing-Header h1{
+        font-family: "Oswald-Bold";
+        font-size: 3rem;
+        color: #5F43B2;
+        text-align: center;
+        text-shadow: 5px 5px 20px #00000046;
+    }
+    
+    .Pricing-Header h3{
+        font-family: "Oswald-Light";
+        font-size: 1.5rem;
+        color: #5F43B2;
+        text-align: center;
+        text-shadow: 5px 5px 20px #00000046;
+    }
+    .Image-Cards-Wrapper{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 50px;
+        
+    }
+    
+    .Image-Card1{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        width: 400px;
+        height: 600px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 50px;
+        align-items: flex-end;
+        box-shadow: 9px 15px 48px 0px rgba(0,0,0,1);
+    }
+    .Image-Card1 img{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .Image-Card1:hover{
+        transform:scale(1.05);
+        transform: translateY(-20px);
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);;
+    }
+    .Image-Card1::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        z-index: 2;
+        transition: 0.5s all;
+        opacity: 0;
+    }
+    
+    .Image-Card1:hover:before{
+        opacity: 1;
+    }
+    
+    .Image-Card1 .Card-Content{
+        position: relative;
+        z-index: 3;
+        color: white;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 0.5s all;
+        
+    }
+    
+    .Image-Card1:hover .Card-Content{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+    .Image-Card1 .Card-Content h2{
+        font-family: "Oswald-Bold";
+        color: #5F43B2;
+        font-size: 36px;
+        opacity: 1;
+    }
+    
+    .Card-Content{
+        height: 50%;
+        width: 100%;
+        z-index: 1;
+        padding: 10px;
+        
+    }
+    .Card-title {
+        position: relative;
+        width: fit-content;
+    }
+    
+    .Card-description{
+        font-family: "futura-Light";
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    .Pricing-btn{
+        border: 2px solid #5F43B2;
+        padding: 5px;
+        text-decoration: none;
+        font-family: "Oswald-SemiBold";
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        text-align: right;
+       
+    }
+    
+    .Pricing-btn:hover{
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);
+        transition: .7s ease-in;
+        background-color: #5F43B2;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .Pricing-Button-container{
+        width: 80px;
+        float: right;
+    }
+    
+}
 
 
 /*Mobile Style*/
 
 @media(max-width: 600px){
     .Pricing-Header{
-        border: 1px solid red;
-        height: 30vh;
+        
+        height: 30%;
         width: 100%;
-        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         
     }
 
+    .pricingheadercontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .Pricing-Header h3{
-        font-size: 50px;
+        width: 300px;
+        font-size: 20vh;
     }
 
 
@@ -459,13 +412,6 @@ nav a:hover{
 
 
     /*Image Cards*/
-    .Image-Cards-Wrapper{
-        flex-direction: column;
-        overflow: hidden;
-        border: 1px solid purple;
-        height: 60%;
-
-    }
     nav{
         background-color: white;
         }
@@ -560,7 +506,7 @@ nav a:hover{
         height: 100px;
         border: none;
     }
-
+/*Pricing section*/
     #Pricing-Section{
         height: 100vh;
         width: 100%;
@@ -572,51 +518,131 @@ nav a:hover{
 
 
     .Pricing-Header{
-        height: 40%;
+        height: 30%;
+       
         display: flex;
         flex-direction: column;
         padding: 10px;
         text-align: center;
     }
 
+    .Pricing-Header h1{
+        font-family: "Oswald-Bold";
+        font-size: 40px;
+        color: black;
+    }
+
+
     .Pricing-Header h3{
+        font-family: "Futura-Light";
         font-size: 20px;
+        color: #5F43B2;
     }
 
     .Image-Cards-Wrapper{
-            
+       
         display: flex;
-        flex: 1 1 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         transition-duration: 0.5s;
         overflow: hidden;
         cursor: pointer;
         position: relative;
         width: 100%;
-        height: 150px;
+        height: 80%;
+        margin-bottom: 0px;
+        gap: 20px;
         
     }
 
     .Image-Card1{
-
+        width: 100%;
+        height: 100vh;
         display: flex;
-        width: 70%;
-        height: 80%;
         transition-duration: 0.5s;
         overflow: hidden;
-    
+        cursor: pointer;
         position: relative;
+        width: 70%;
+        height: 40%;
+        border-radius: 20px;
+        padding: 10px;
+        padding-top: 20px;
+        align-items: flex-end;
+        box-shadow: 9px 15px 48px 0px rgba(0,0,0,1);
         
     }
 
-    .Card-Content{
-        height: 50%;
+    .Image-Card1 img{
+        position: absolute;
+        object-fit: cover;
         width: 100%;
-        border: none;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .Image-Card1::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        z-index: 2;
+        transition: 0.5s all;
+        opacity: 0;
+    }
+
+    .Image-Card1 .Card-Content{
+        position: relative;
+        z-index: 3;
         color: white;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 0.5s all;
+    }
+
+    .Image-Card1:hover .Card-Content{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .Image-Card1 .Card-Content h2{
+        font-family: "Oswald-Bold";
+        color: #5F43B2;
+        font-size: 36px;
+        opacity: 1;
+    }
+    
+    .Card-Content{
+        height: 75%;
+        width: 100%;
+        z-index: 1;
         display: flex;
         flex-direction: column;
-        text-align: left;
+        justify-content: center;
+        align-items: center;
+       
     }
+
+
+    .Card-Content h2{
+        font-size: 20px;
+        
+        padding: 10px;
+    }
+
+
+
+
+    .Card-title {
+        position: relative;
+        width: fit-content;
+    }
+
 
     .Card-Content h2{
         font-size: 20px;
@@ -629,7 +655,266 @@ nav a:hover{
         display: none;
     }
 
+    
+
+    .Pricing-btn{
+        border: 2px solid #5F43B2;
+        padding: 5px;
+        text-decoration: none;
+        font-family: "Oswald-SemiBold";
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        text-align: right;
+        
+       
+    }
+
   
     
 
 }
+
+@media screen and (min-device-width:601px) and (max-device-width:1023px){
+    nav{
+        background-color: white;
+        }
+      
+      nav ul{
+          width: 100%;
+          list-style: none;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+      }
+      
+      nav li{
+          height: 60px;
+      
+      }
+      
+      nav a{
+          height: 100%;
+          padding: 0 30px;
+          display: flex;
+          text-decoration: none;
+          align-items: center;
+          color: #5F43B2;
+      }
+
+      nav li:first-child{
+        margin-right: auto;
+    }
+    .sidebar{
+        transform: none;
+        transition: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: white;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+    }   
+    
+    .sidebar li{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    
+    .sidebar a{
+        width: 100%;
+        color: #5F43B2;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Oswald-Light";
+    }
+    
+    
+    .menu-button{
+      display: none;
+    }
+    
+  .hideOnMobile{
+      display: none;
+  }
+  
+  .menu-button{
+    display:block ;
+  }
+  
+  
+  .sidebar{
+    display: hidden;
+  }
+  
+  
+  nav li{
+      height: 100px;
+      border: none;
+  }
+
+
+  /*under nav*/
+
+  #Pricing-Section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.Pricing-Header{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    
+    
+}
+
+.Pricing-Header h1{
+    font-family: "Oswald-Bold";
+    font-size: 40px;
+    color: #363636 ;
+    
+}
+
+
+.Pricing-Header h3{
+    font-family: "Futura-Light";
+    color: #5F43B2;
+    font-size: 20px;
+}
+
+
+.Image-Cards-Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.Image-Card1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    align-items: flex-end;
+    box-shadow: 9px 15px 48px 0px rgba(0,0,0,1);
+}
+
+.Image-Card1 img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.Image-Card1:hover{
+    transform:scale(1.05);
+    transform: translateY(-20px);
+    box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);;
+}
+
+.Image-Card1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+
+.Image-Card1:hover:before{
+    opacity: 1;
+}
+
+.Image-Card1 .Card-Content{
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s all;
+    
+}
+
+.Image-Card1:hover .Card-Content{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Image-Card1 .Card-Content h2{
+    font-family: "Oswald-Bold";
+    color: #5F43B2;
+    font-size: 36px;
+    opacity: 1;
+}
+
+.Card-Content{
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+}
+
+.Card-title {
+    position: relative;
+    width: fit-content;
+}
+
+.Card-description{
+    font-family: "futura-Light";
+    font-size: 10px;
+    width: 100%;
+}
+
+.Pricing-btn{
+    border: 2px solid #5F43B2;
+    padding: 5px;
+    text-decoration: none;
+    font-family: "Oswald-SemiBold";
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: right;
+}
+
+
+
+
+
+
+}
+
