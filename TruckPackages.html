@@ -352,7 +352,12 @@
       <script src="script.js"></script>
       <script>
 
-        function showSidebar() {
+        document.addEventListener("DOMContentLoaded", function() {
+    // Ensure the sidebar remains hidden
+    document.querySelector('.sidebar').style.display = 'none';
+});
+
+function showSidebar() {
           const sidebar = document.querySelector(".sidebar");
           sidebar.style.display = "flex";
         }
@@ -361,10 +366,8 @@
           const sidebar = document.querySelector(".sidebar");
           sidebar.style.display = "none";
         }
-        
 
-       
-      </script>
+            </script>
     </section>
   </body>
 </html>

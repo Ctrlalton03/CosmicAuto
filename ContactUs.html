@@ -89,16 +89,23 @@
 
 
     
-    <script>
-      function showSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "flex";
-      }
+      <script>
 
-      function hideSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "none";
-      }
-    </script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Ensure the sidebar remains hidden
+    document.querySelector('.sidebar').style.display = 'none';
+});
+
+function showSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "flex";
+        }
+  
+        function hideSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "none";
+        }
+
+            </script>
   </section>
 </body>
