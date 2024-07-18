@@ -286,7 +286,7 @@ body {
 
 /*Mobile Style*/
 
-@media(max-width: 600px){
+
     .Pricing-Header{
         
         height: 30%;
@@ -673,7 +673,7 @@ body {
   
     
 
-}
+
 
 @media screen and (min-device-width:601px) and (max-device-width:1023px){
     nav{
