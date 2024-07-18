@@ -201,7 +201,7 @@ body {
         width:80%;
         
         background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(0, 4, 255);
+     
         border-radius:5px ;
         
     }
@@ -347,7 +347,7 @@ body {
         padding: 2rem;
         flex-grow: 1;
         flex-basis: 0;
-        max-width: 80%;
+        max-width: 275px;
         border-radius: 18px;
         color: white;
         box-shadow: 10px 10px 47px 0px rgba(0,0,0,0.75);
@@ -374,12 +374,6 @@ nav{
     padding: 25px;
 }
 
-.links-container{
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-}
 
 nav a{
     height: 100%;
@@ -410,6 +404,17 @@ nav a:hover{
     display: none;
 }
 
+.hideOnMobile{
+    display: block;
+}
+
+.menu-button{
+    display: none;
+}
+
+.swiper-container{
+    display: none;
+}
 
 .Sedan-PackagingPage{
     display: flex;
@@ -420,6 +425,7 @@ nav a:hover{
     opacity: 0;
     animation: slideIn 1s ease-in-out forwards;
     animation-delay: 0.5s;
+
 }
 
 #Packing-Picture-Header{
@@ -437,7 +443,7 @@ nav a:hover{
     font-size: 97px;
     display: flex;
     align-items: center;
-    padding: 80px;
+    padding: 30px;
     text-shadow:10px 10px 20px #000000af;
     transform: translateX(-20px);
     opacity: 0;
@@ -445,114 +451,34 @@ nav a:hover{
     animation-delay: 1s;
 }
 
-#Package-container{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 55px;
-    border: 1px solid red;
-}
 
 .Packages-comparison{
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: stretch;
     width:100%;
-    height: 45vh;
+    height: 80%;
     margin: 1rem;
 }
 
-.price-column{
-    background-color: white;
-    padding: 2rem;
-    flex-grow: 1;
-    flex-basis: 0;
-    max-width: 80%;
-    border-radius: 18px;
-    color: #5F43B2;
-    box-shadow: 10px 10px 47px 0px rgba(0,0,0,0.75);
-
-}
-
-.price-column.popular{
-    background-color: #5F43B2;
-    color: white;
-    position: relative;
-}
-
-.price-header{
-    font-family: "Oswald-SemiBold";
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+#Package-container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    
-}
-
-.price{
-    font-size: 3.5rem;
-    display: flex;
-    
-}
-
-.dollar-sign{
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    margin-right: .25rem;
-    font-family: "Aileron-Light";
-}
-
-.Usd{
-    font-size: .75rem;
-    align-self: flex-end;
-    margin-bottom: 1rem;
-    font-family: "Aileron-Light";
-}
-
-.divider{
-    height: 1px;
-    width: 100%;
-    background-color: black;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.feature{
-    display: flex;
     align-items: center;
-    margin: .4rem;
-    font-size: .85rem;
-    font-family: "Aileron-Light";
-}
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
 
-.feature img{
-    height: 1.1em;
-    width: 1.1em;
-    margin-right: .5rem;
-}
-
-.feature.inactive{
-    color: gray;
-    text-decoration: line-through;
-}
-
-.most-popular{
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    left: 0.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Oswald-Bold";
 }
 
 .Packages-comparison:hover{
     cursor: pointer;
     transform: scale(1.2);
-    transition: .2s ease-out;
+    transition: .5s ease-in-out;
 }
+
+
 }
