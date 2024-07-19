@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="aboutusstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="About-Us-Section-container">
+        <nav>
+            <ul class="sidebar">
+              <li onclick="hideSidebar()">
+                <a
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40"
+                    viewBox="0 -960 960 960"
+                    width="34"
+                  >
+                    <path
+                      d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                    /></svg></a>
+              </li>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="ComparePackages.html">Packages</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+            <ul>
+              <li><a>Logo</a></li>
+              <li class="hideOnMobile"><a href="Index.html">Home</a></li>
+              <li class="hideOnMobile">
+                <a href="ComparePackages.html">Packages</a>
+              </li>
+              <li class="hideOnMobile"><a href="ContactUs.html">Contact Us</a></li>
+              <li class="hideOnMobile"><a href="#">About Us</a></li>
+              <li class="menu-button"onclick="showSidebar()">
+                <a
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40"
+                    viewBox="0 -960 960 960"
+                    width="34"
+                  >
+                    <path
+                      d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+              </li>
+            </ul>
+          </nav>
+
+          <div id="AboutUsPictureContainer">
+            <h1>Picture Here</h1>
+          </div>
+
+          <div id="About-Us-Content-Container">
+            <div id="About-Us-Header-Container-wrapper">
+              <h1 id="About-Us-Header">About Us</h1>
+              <p id="About-Us-Sub-Header">
+                Cosmic Auto Detailing is a family-owned business that has been
+                serving the Greater Toronto Area for over 20 years. We are
+                committed to providing the highest quality detailing services
+                for your vehicle. Our team of professionals is dedicated to
+                ensuring that your vehicle looks its best. We offer a wide range
+                of services to meet your needs, from basic washes to full
+                detailing packages. Our goal is to exceed your expectations and
+                provide you with the best service possible. Contact us today to
+                learn more about our services and to schedule an appointment.
+              </h3>
+            </div>
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+          <script>
+
+            document.addEventListener("DOMContentLoaded", function() {
+        // Ensure the sidebar remains hidden
+        document.querySelector('.sidebar').style.display = 'none';
+    });
+    
+    function showSidebar() {
+              const sidebar = document.querySelector(".sidebar");
+              sidebar.style.display = "flex";
+            }
+      
+            function hideSidebar() {
+              const sidebar = document.querySelector(".sidebar");
+              sidebar.style.display = "none";
+            }
+    
+                </script>
+    </section>
+    <footer>
+      <div id="footer-header">
+        <h1>Company</h1>
+        <h1>Socials</h1>
+      </div>
+      <div id="listContainer">
+        <ul id="listlinks">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="ComparePackages.html">Packages</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+        <ul id="listsocials">
+          <li><a href="https://www.facebook.com/"><img src="Images/icons8-facebook-48.png"></a></li>
+          <li><a href="https://www.facebook.com/"><img src="Images/icons8-facebook-48.png"></a></li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>

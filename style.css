@@ -1742,8 +1742,8 @@ html{
     }
 
     .Image-Card1:hover{
-        transform:scale(1);
-        transform: translateY(0px);
+        transform:none;
+        transform:none;
         box-shadow:none;}
 
 
